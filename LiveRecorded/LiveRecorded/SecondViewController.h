@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import "AACEncoder.h"
+#import "H264Encoder.h"
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController<AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate, H264EncoderDelegate>
+
+
 
 @end
