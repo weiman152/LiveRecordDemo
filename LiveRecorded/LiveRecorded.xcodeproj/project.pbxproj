@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81325A9920C4DA8400D49AF0 /* H264Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 81325A9820C4DA8400D49AF0 /* H264Encoder.m */; };
+		81325A9C20C4ECA600D49AF0 /* AACEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 81325A9B20C4ECA600D49AF0 /* AACEncoder.m */; };
+		81325A9F20C5104000D49AF0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81325A9E20C5104000D49AF0 /* SecondViewController.m */; };
 		81B33B5220BD4A8E00D58A23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B33B5120BD4A8E00D58A23 /* AppDelegate.swift */; };
 		81B33B5420BD4A8E00D58A23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B33B5320BD4A8E00D58A23 /* ViewController.swift */; };
 		81B33B5720BD4A8E00D58A23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81B33B5520BD4A8E00D58A23 /* Main.storyboard */; };
@@ -15,6 +18,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8124BA9F20C15F0A001B2A0A /* LiveRecorded-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiveRecorded-Bridging-Header.h"; sourceTree = "<group>"; };
+		81325A9720C4DA8400D49AF0 /* H264Encoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H264Encoder.h; sourceTree = "<group>"; };
+		81325A9820C4DA8400D49AF0 /* H264Encoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H264Encoder.m; sourceTree = "<group>"; };
+		81325A9A20C4ECA600D49AF0 /* AACEncoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AACEncoder.h; sourceTree = "<group>"; };
+		81325A9B20C4ECA600D49AF0 /* AACEncoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AACEncoder.m; sourceTree = "<group>"; };
+		81325A9D20C5104000D49AF0 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		81325A9E20C5104000D49AF0 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		81B33B4E20BD4A8E00D58A23 /* LiveRecorded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveRecorded.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81B33B5120BD4A8E00D58A23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81B33B5320BD4A8E00D58A23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,10 +66,17 @@
 			children = (
 				81B33B5120BD4A8E00D58A23 /* AppDelegate.swift */,
 				81B33B5320BD4A8E00D58A23 /* ViewController.swift */,
+				81325A9D20C5104000D49AF0 /* SecondViewController.h */,
+				81325A9E20C5104000D49AF0 /* SecondViewController.m */,
+				81325A9A20C4ECA600D49AF0 /* AACEncoder.h */,
+				81325A9B20C4ECA600D49AF0 /* AACEncoder.m */,
+				81325A9720C4DA8400D49AF0 /* H264Encoder.h */,
+				81325A9820C4DA8400D49AF0 /* H264Encoder.m */,
 				81B33B5520BD4A8E00D58A23 /* Main.storyboard */,
 				81B33B5820BD4A8F00D58A23 /* Assets.xcassets */,
 				81B33B5A20BD4A8F00D58A23 /* LaunchScreen.storyboard */,
 				81B33B5D20BD4A8F00D58A23 /* Info.plist */,
+				8124BA9F20C15F0A001B2A0A /* LiveRecorded-Bridging-Header.h */,
 			);
 			path = LiveRecorded;
 			sourceTree = "<group>";
@@ -96,6 +113,7 @@
 				TargetAttributes = {
 					81B33B4D20BD4A8E00D58A23 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -135,6 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81325A9F20C5104000D49AF0 /* SecondViewController.m in Sources */,
+				81325A9C20C4ECA600D49AF0 /* AACEncoder.m in Sources */,
+				81325A9920C4DA8400D49AF0 /* H264Encoder.m in Sources */,
 				81B33B5420BD4A8E00D58A23 /* ViewController.swift in Sources */,
 				81B33B5220BD4A8E00D58A23 /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3GNXU2LRUU;
 				INFOPLIST_FILE = LiveRecorded/Info.plist;
@@ -290,6 +312,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cddh.LiveRecorded;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiveRecorded/LiveRecorded-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,6 +323,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3GNXU2LRUU;
 				INFOPLIST_FILE = LiveRecorded/Info.plist;
@@ -309,6 +334,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cddh.LiveRecorded;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiveRecorded/LiveRecorded-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -153,6 +153,10 @@ extension ViewController : AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptu
     }
 }
 
+extension ViewController {
+    
+}
+
 
 
 
